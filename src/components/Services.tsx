@@ -66,7 +66,7 @@ export default function Services() {
   };
 
   return (
-    <section className="relative bg-[#121212] py-32 px-6 sm:px-12 md:px-24 border-t border-white/5 z-20">
+    <section className="relative bg-[#121212] py-20 sm:py-32 px-6 sm:px-12 md:px-24 border-t border-white/5 z-20">
       {/* Glow highlight */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-blue-500/5 blur-[160px] pointer-events-none" />
 

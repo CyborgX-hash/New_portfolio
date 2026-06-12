@@ -44,7 +44,7 @@ export default function Overlay({ scrollYProgress }: OverlayProps) {
       {/* SECTION 2: 30% Scroll Progress (Left Aligned) */}
       <motion.div
         style={{ opacity: opacityS2, y: yS2 }}
-        className="fixed inset-y-0 left-0 w-full md:w-[60%] flex flex-col justify-center px-8 sm:px-16 md:px-24"
+        className="fixed inset-y-0 left-0 w-full md:w-[60%] flex flex-col justify-center px-6 sm:px-16 md:px-24"
       >
         <div className="max-w-md">
           <div className="flex items-center space-x-3 mb-6">
@@ -70,7 +70,7 @@ export default function Overlay({ scrollYProgress }: OverlayProps) {
       {/* SECTION 3: 60% Scroll Progress (Right Aligned) */}
       <motion.div
         style={{ opacity: opacityS3, y: yS3 }}
-        className="fixed inset-y-0 right-0 w-full md:w-[60%] flex flex-col justify-center items-end px-8 sm:px-16 md:px-24 text-right"
+        className="fixed inset-y-0 right-0 w-full md:w-[60%] flex flex-col justify-center items-end px-6 sm:px-16 md:px-24 text-right"
       >
         <div className="max-w-md">
           <div className="flex items-center justify-end space-x-3 mb-6">
@@ -94,7 +94,7 @@ export default function Overlay({ scrollYProgress }: OverlayProps) {
       </motion.div>
 
       {/* Persistent UI elements: bottom progress indicator */}
-      <div className="fixed bottom-10 left-10 right-10 flex justify-between items-end text-white z-20">
+      <div className="fixed bottom-6 left-6 right-6 md:bottom-10 md:left-10 md:right-10 flex justify-between items-end text-white z-20">
         {/* Scroll percentage */}
         <div className="flex flex-col space-y-1">
           <span className="text-[9px] font-mono tracking-widest text-gray-500">SCROLL INDEX</span>

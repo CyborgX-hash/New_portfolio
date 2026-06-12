@@ -66,7 +66,7 @@ export default function Process() {
   };
 
   return (
-    <section className="relative bg-[#121212] py-32 px-6 sm:px-12 md:px-24 border-t border-white/5 z-20">
+    <section className="relative bg-[#121212] py-20 sm:py-32 px-6 sm:px-12 md:px-24 border-t border-white/5 z-20">
       {/* Background glow lighting */}
       <div className="absolute top-1/4 right-0 w-[400px] h-[400px] rounded-full bg-blue-500/5 blur-[120px] pointer-events-none" />
 
@@ -77,7 +77,7 @@ export default function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
-          className="mb-24 text-center md:text-left"
+          className="mb-16 sm:mb-24 text-center md:text-left"
         >
           <div className="inline-flex items-center space-x-3 mb-4">
             <span className="h-[1px] w-6 bg-blue-500" />

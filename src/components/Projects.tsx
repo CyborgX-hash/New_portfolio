@@ -63,7 +63,7 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <section className="relative bg-[#121212] py-32 px-6 sm:px-12 md:px-24 border-t border-white/5 z-20">
+    <section className="relative bg-[#121212] py-20 sm:py-32 px-6 sm:px-12 md:px-24 border-t border-white/5 z-20">
       {/* Decorative ambient lighting */}
       <div className="absolute top-1/3 left-10 w-[500px] h-[500px] rounded-full bg-blue-500/5 blur-[150px] pointer-events-none" />
       <div className="absolute bottom-1/3 right-10 w-[500px] h-[500px] rounded-full bg-indigo-500/5 blur-[150px] pointer-events-none" />
@@ -92,7 +92,7 @@ export default function Projects() {
         </motion.div>
 
         {/* Alternating Split Projects Grid */}
-        <div className="space-y-40">
+        <div className="space-y-24 sm:space-y-40">
           {projects.map((project, index) => {
             const Icon = project.icon;
             const isEven = index % 2 === 0;
@@ -151,7 +151,7 @@ export default function Projects() {
                   </p>
 
                   {/* Rich Stats / Metrics Grid */}
-                  <div className="grid grid-cols-3 gap-4 mb-8 p-4 bg-white/[0.01] border border-white/5 rounded-xl">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 p-4 bg-white/[0.01] border border-white/5 rounded-xl">
                     {project.metrics.map((metric, metricIdx) => (
                       <div key={metricIdx} className="flex flex-col">
                         <span className="text-[9px] font-mono text-gray-500 tracking-widest uppercase mb-1.5 flex items-center gap-1">
@@ -213,7 +213,7 @@ export default function Projects() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 1 }}
-          className="mt-40 text-center border-t border-white/5 pt-12"
+          className="mt-24 sm:mt-40 text-center border-t border-white/5 pt-12"
         >
           <p className="text-xs font-mono tracking-widest text-gray-600 uppercase">
             Designed &amp; Engineered by Saksham © {new Date().getFullYear()}
