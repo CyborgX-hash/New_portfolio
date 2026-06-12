@@ -8,7 +8,7 @@ interface ScrollyCanvasProps {
   scrollYProgress: MotionValue<number>;
 }
 
-const TOTAL_FRAMES = 75;
+const TOTAL_FRAMES = 39;
 
 export default function ScrollyCanvas({ scrollYProgress }: ScrollyCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);

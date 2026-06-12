@@ -104,7 +104,6 @@ export default function Overlay({ scrollYProgress }: OverlayProps) {
               opacity: useTransform(scrollYProgress, [0.0, 0.9], [1, 0.3])
             }}
           >
-            {/* Direct interpolation isn't reactive inside a standard element in next unless we use custom components, or simply display "SCRUBBING..." */}
             SCRUBBING TIMELINE
           </motion.span>
         </div>
